@@ -4,7 +4,7 @@ import { AdoptionController } from './adoption.controller';
 import { AdoptionRepository } from './adoption.repository';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AdoptionEntity } from '../entidades/adoption.entity';
-import { ShelterEntity } from 'src/entidades/shelter.entity';
+import { ShelterEntity } from '../entidades/shelter.entity';
 import { UserEntity } from '../entidades/user.Entity';
 import { PetsEntity } from '../entidades/pets.entity';
 import { PetsService } from '../pets/pets.service';
