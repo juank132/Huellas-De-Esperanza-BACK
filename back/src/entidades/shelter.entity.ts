@@ -1,6 +1,5 @@
-import { Column, Entity, JoinColumn, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { v4 as uuid } from 'uuid';
-// import { DonationEntity } from './donation.entity';
 import { AdoptionEntity } from './adoption.entity';
 import { PetsEntity } from './pets.entity';
 import { OrderDetailsEntity } from './orderDetail.entity';
