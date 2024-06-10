@@ -1,8 +1,8 @@
 import { Body, Controller, Delete, Get, Param, ParseUUIDPipe, Post, Put, Query, Req, UseGuards } from '@nestjs/common';
 import { UserService } from './user.service';
-import { UpdateUserDto } from 'src/dto/updateUser.dto';
+import { UpdateUserDto } from '../dto/updateUser.dto';
 import { ApiQuery, ApiTags } from '@nestjs/swagger';
-import { AuthGuard } from 'src/guards/auth.guard';
+import { AuthGuard } from '../guards/auth.guard';
 
 @ApiTags("Users")
 @Controller('users')
