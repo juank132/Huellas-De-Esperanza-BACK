@@ -5,15 +5,14 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreateAdopcionDto } from 'src/dto/createAdopcion.dto';
-import { AdoptionEntity } from 'src/entidades/adoption.entity';
-import { PetsEntity } from 'src/entidades/pets.entity';
-import { ShelterEntity } from 'src/entidades/shelter.entity';
-import { UserEntity } from 'src/entidades/user.entity';
-import { PetsService } from 'src/pets/pets.service';
+import { AdoptionEntity } from '../entidades/adoption.entity';
+import { PetsEntity } from '../entidades/pets.entity';
+import { ShelterEntity } from '../entidades/shelter.entity';
+import { UserEntity } from '../entidades/user.entity';
+import { PetsService } from '../pets/pets.service';
 import { Repository } from 'typeorm';
 import * as cron from 'node-cron';
-import { MailService } from 'src/mails/mail.service';
+import { MailService } from '../mails/mail.service';
 @Injectable()
 export class AdoptionRepository {
   private readonly logger = new Logger(MailService.name);

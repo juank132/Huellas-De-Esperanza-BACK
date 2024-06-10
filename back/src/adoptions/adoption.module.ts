@@ -5,12 +5,12 @@ import { AdoptionRepository } from './adoption.repository';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AdoptionEntity } from '../entidades/adoption.entity';
 import { ShelterEntity } from 'src/entidades/shelter.entity';
-import { UserEntity } from 'src/entidades/user.entity';
-import { PetsEntity } from 'src/entidades/pets.entity';
-import { PetsService } from 'src/pets/pets.service';
-import { PetsRepository } from 'src/pets/pets.repository';
+import { UserEntity } from '../entidades/user.Entity';
+import { PetsEntity } from '../entidades/pets.entity';
+import { PetsService } from '../pets/pets.service';
+import { PetsRepository } from '../pets/pets.repository';
 import { JwtService } from '@nestjs/jwt';
-import { MailService } from 'src/mails/mail.service';
+import { MailService } from '../mails/mail.service';
 import { ConfigService } from '@nestjs/config';
 
 @Module({

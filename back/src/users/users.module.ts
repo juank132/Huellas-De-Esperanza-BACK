@@ -5,7 +5,7 @@ import { UserRepository } from './User.Repository';
 import { UserEntity } from '../entidades/user.entity';
 import { VolunteerEntity } from '../entidades/volunteers.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { MailService } from 'src/mails/mail.service';
+import { MailService } from '../mails/mail.service';
 import { ConfigService } from '@nestjs/config';
 import { ShelterEntity } from 'src/entidades/shelter.entity';
 import { ShelterRepository } from 'src/shelters/shelters.repository';

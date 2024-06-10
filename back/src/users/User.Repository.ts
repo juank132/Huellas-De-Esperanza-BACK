@@ -1,11 +1,11 @@
 import { BadRequestException, Injectable, Logger, NotFoundException, OnModuleInit } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { UserEntity } from "src/entidades/user.entity";
-import { MailService } from "src/mails/mail.service";
+import { UserEntity } from "../entidades/user.entity";
+import { MailService } from "../mails/mail.service";
 import { Repository } from "typeorm";
 import * as cron from 'node-cron';
-import { ShelterEntity } from "src/entidades/shelter.entity";
-import { PetsEntity } from "src/entidades/pets.entity";
+import { ShelterEntity } from "../entidades/shelter.entity";
+import { PetsEntity } from "../entidades/pets.entity";
 
 
 @Injectable()
