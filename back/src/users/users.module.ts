@@ -7,9 +7,9 @@ import { VolunteerEntity } from '../entidades/volunteers.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MailService } from '../mails/mail.service';
 import { ConfigService } from '@nestjs/config';
-import { ShelterEntity } from 'src/entidades/shelter.entity';
-import { ShelterRepository } from 'src/shelters/shelters.repository';
-import { PetsEntity } from 'src/entidades/pets.entity';
+import { ShelterEntity } from '../entidades/shelter.entity';
+import { ShelterRepository } from '../shelters/shelters.repository';
+import { PetsEntity } from '../entidades/pets.entity';
 import { JwtService } from '@nestjs/jwt';
 
 @Module({
