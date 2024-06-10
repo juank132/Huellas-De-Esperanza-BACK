@@ -5,15 +5,16 @@ import { DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT, DB_USERNAME } from './envs';
 const dbConfig: DataSourceOptions = {
   type: 'postgres',
   database: DB_NAME,
-  host: DB_HOST,
+  // host: DB_HOST,
+  host: "postgresdb",
   port: +DB_PORT, 
   username: DB_USERNAME,
   password: DB_PASSWORD,
   entities: ['dist/**/*.entity{.ts,.js}'],
   migrations: ['dist/migrations/*{.ts,.js}'],
   logging: true,
-  synchronize: false,
-  dropSchema: false,
+  synchronize: true,
+  dropSchema: true,
 };
 
 export const databaseConfig = TypeOrmModule.forRoot({
