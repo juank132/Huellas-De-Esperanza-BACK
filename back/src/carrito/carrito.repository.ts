@@ -1,10 +1,10 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { ShelterOrderDto } from "src/dto/shelterOrderDto";
-import { OrderDetailsEntity } from "src/entidades/orderDetail.entity";
-import { OrdersEntity } from "src/entidades/orders.entity";
-import { ShelterEntity } from "src/entidades/shelter.entity";
-import { UserEntity } from "src/entidades/user.entity";
+import { ShelterOrderDto } from "../dto/shelterOrderDto";
+import { OrderDetailsEntity } from "../entidades/orderDetail.entity";
+import { OrdersEntity } from "../entidades/orders.entity";
+import { ShelterEntity } from "../entidades/shelter.entity";
+import { UserEntity } from "../entidades/user.entity";
 import { Repository } from "typeorm";
 
 @Injectable()

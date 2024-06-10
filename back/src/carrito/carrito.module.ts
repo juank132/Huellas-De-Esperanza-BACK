@@ -3,10 +3,10 @@ import { CarritoController } from './carrito.controller';
 import { CarritoService } from './carrito.service';
 import { CarritoRepository } from './carrito.repository';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { OrdersEntity } from 'src/entidades/orders.entity';
-import { OrderDetailsEntity } from 'src/entidades/orderDetail.entity';
-import { UserEntity } from 'src/entidades/user.entity';
-import { ShelterEntity } from 'src/entidades/shelter.entity';
+import { OrdersEntity } from '../entidades/orders.entity';
+import { OrderDetailsEntity } from '../entidades/orderDetail.entity';
+import { UserEntity } from '../entidades/user.entity';
+import { ShelterEntity } from '../entidades/shelter.entity';
 import { JwtService } from '@nestjs/jwt';
 
 @Module({

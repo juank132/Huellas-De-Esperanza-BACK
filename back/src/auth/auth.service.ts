@@ -9,8 +9,8 @@ import { UserEntity } from '../entidades/user.entity';
 import axios from 'axios';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { ShelterEntity } from 'src/entidades/shelter.entity';
-import { MailService } from 'src/mails/mail.service';
+import { ShelterEntity } from '../entidades/shelter.entity';
+import { MailService } from '../mails/mail.service';
 
 @Injectable()
 export class AuthService {

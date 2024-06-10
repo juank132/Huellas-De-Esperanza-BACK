@@ -8,9 +8,8 @@ import {
   MessageBody,
 } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
-import { ChatRepository } from './chatRepository';
 import { InjectRepository } from '@nestjs/typeorm';
-import { UserEntity } from 'src/entidades/user.entity';
+import { UserEntity } from '../entidades/user.entity';
 import { Repository } from 'typeorm';
 import { ChatService } from './chat.service';
 
